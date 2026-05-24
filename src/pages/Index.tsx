@@ -189,12 +189,12 @@ export default function Index() {
 
             <div className="flex items-center gap-3">
               <a
-                href="tel:+78450000000"
+                href="tel:+79603561222"
                 className="hidden md:flex items-center gap-1.5 font-golos font-medium text-sm"
                 style={{ color: scrolled ? "#8B4513" : "rgba(255,248,240,0.9)" }}
               >
                 <Icon name="Phone" size={14} />
-                +7 (845) 000-00-00
+                +7 (960) 356-12-22
               </a>
               <button
                 onClick={() => handleNav("#contacts")}
@@ -229,9 +229,9 @@ export default function Index() {
               </button>
             ))}
             <div className="pt-3 flex flex-col gap-2">
-              <a href="tel:+78450000000" className="flex items-center gap-2 font-golos" style={{ color: "#8B4513" }}>
+              <a href="tel:+79603561222" className="flex items-center gap-2 font-golos" style={{ color: "#8B4513" }}>
                 <Icon name="Phone" size={16} />
-                +7 (845) 000-00-00
+                +7 (960) 356-12-22
               </a>
               <button
                 onClick={() => handleNav("#contacts")}
@@ -682,7 +682,7 @@ export default function Index() {
                 {
                   icon: "Phone" as const,
                   label: "Телефон",
-                  value: "+7 (845) 000-00-00",
+                  value: "+7 (960) 356-12-22",
                   color: "#2C5F8A",
                 },
                 {
@@ -825,7 +825,7 @@ export default function Index() {
               <div className="space-y-2.5">
                 {[
                   { icon: "MapPin" as const, text: "с. Тростянка, ул. 40 лет Победы, д. 36" },
-                  { icon: "Phone" as const, text: "+7 (845) 000-00-00", href: "tel:+78450000000" },
+                  { icon: "Phone" as const, text: "+7 (960) 356-12-22", href: "tel:+79603561222" },
                   { icon: "Clock" as const, text: "Ежедневно 10:00 – 22:00" },
                 ].map((item) => (
                   <div key={item.text} className="flex items-start gap-2 font-golos text-sm" style={{ color: "rgba(255,248,240,0.75)" }}>
