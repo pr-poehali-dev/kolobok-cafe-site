@@ -43,14 +43,13 @@
     --sidebar-border: 35 30% 80%;
     --sidebar-ring: 8 65% 45%;
 
-    /* Колобок brand vars */
     --kolobok-wood: #8b4513;
     --kolobok-wood-light: #c4843a;
     --kolobok-cream: #fff8f0;
     --kolobok-beige: #f5e6d3;
     --kolobok-red: #c0392b;
     --kolobok-gold: #d4a017;
-    --kolobok-blue: #2c5f8a;
+    --kolobok-blue: #1a3a6b;
     --kolobok-brown: #3e2009;
     --kolobok-text: #2c1a0e;
   }
@@ -73,53 +72,385 @@
   }
 }
 
-/* Узор — народная вышивка SVG фон */
-.pattern-folk {
-  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C0392B' fill-opacity='0.06'%3E%3Cpath d='M30 0 L32 8 L30 6 L28 8 Z M30 60 L32 52 L30 54 L28 52 Z M0 30 L8 32 L6 30 L8 28 Z M60 30 L52 32 L54 30 L52 28 Z'/%3E%3Ccircle cx='30' cy='30' r='3'/%3E%3Ccircle cx='0' cy='0' r='2'/%3E%3Ccircle cx='60' cy='0' r='2'/%3E%3Ccircle cx='0' cy='60' r='2'/%3E%3Ccircle cx='60' cy='60' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+/* =====================
+   СТАРОСЛАВЯНСКИЙ ШРИФТ
+   ===================== */
+.font-slavic {
+  font-family: "Uncial Antiqua", "Cormorant SC", serif;
+  letter-spacing: 0.04em;
 }
 
-.pattern-wood {
-  background-color: #8b4513;
+/* =====================
+   ГЖЕЛЬ — синий фарфоровый узор
+   ===================== */
+.pattern-gzhel {
+  background-color: #f0f4ff;
   background-image:
+    /* Большие цветки гжели */
+    radial-gradient(
+      ellipse 18px 24px at 30px 30px,
+      rgba(26, 58, 107, 0.12) 0%,
+      transparent 70%
+    ),
+    radial-gradient(
+      circle 6px at 30px 30px,
+      rgba(26, 58, 107, 0.18) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 8px 14px at 20px 22px,
+      rgba(26, 58, 107, 0.1) 0%,
+      transparent 80%
+    ),
+    radial-gradient(
+      ellipse 8px 14px at 40px 22px,
+      rgba(26, 58, 107, 0.1) 0%,
+      transparent 80%
+    ),
+    radial-gradient(
+      ellipse 8px 14px at 20px 38px,
+      rgba(26, 58, 107, 0.1) 0%,
+      transparent 80%
+    ),
+    radial-gradient(
+      ellipse 8px 14px at 40px 38px,
+      rgba(26, 58, 107, 0.1) 0%,
+      transparent 80%
+    ),
+    /* Маленькие точки */
+      radial-gradient(
+        circle 2px at 10px 10px,
+        rgba(26, 58, 107, 0.15) 0%,
+        transparent 100%
+      ),
+    radial-gradient(
+      circle 2px at 50px 10px,
+      rgba(26, 58, 107, 0.15) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle 2px at 10px 50px,
+      rgba(26, 58, 107, 0.15) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle 2px at 50px 50px,
+      rgba(26, 58, 107, 0.15) 0%,
+      transparent 100%
+    ),
+    /* Завитки — линии */
+      repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 28px,
+        rgba(26, 58, 107, 0.04) 28px,
+        rgba(26, 58, 107, 0.04) 30px
+      ),
     repeating-linear-gradient(
-      90deg,
+      -45deg,
       transparent,
-      transparent 2px,
-      rgba(0, 0, 0, 0.04) 2px,
-      rgba(0, 0, 0, 0.04) 4px
+      transparent 28px,
+      rgba(26, 58, 107, 0.04) 28px,
+      rgba(26, 58, 107, 0.04) 30px
+    );
+  background-size: 60px 60px;
+}
+
+/* =====================
+   ХОХЛОМА — золото/красный на чёрном
+   ===================== */
+.pattern-khokhloma {
+  background-color: #1a0a02;
+  background-image:
+    /* Золотые ягоды */
+    radial-gradient(
+      circle 5px at 15px 15px,
+      rgba(212, 160, 23, 0.5) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle 4px at 45px 15px,
+      rgba(192, 57, 43, 0.5) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle 5px at 30px 35px,
+      rgba(212, 160, 23, 0.45) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle 3px at 8px 45px,
+      rgba(192, 57, 43, 0.4) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle 4px at 52px 45px,
+      rgba(212, 160, 23, 0.45) 0%,
+      transparent 100%
+    ),
+    /* Листья — диагональные штрихи */
+      repeating-linear-gradient(
+        30deg,
+        transparent,
+        transparent 10px,
+        rgba(212, 160, 23, 0.06) 10px,
+        rgba(212, 160, 23, 0.06) 12px
+      ),
+    repeating-linear-gradient(
+      -30deg,
+      transparent,
+      transparent 10px,
+      rgba(192, 57, 43, 0.05) 10px,
+      rgba(192, 57, 43, 0.05) 12px
+    ),
+    /* Завитки */
+      radial-gradient(
+        ellipse 20px 8px at 30px 28px,
+        rgba(212, 160, 23, 0.08) 0%,
+        transparent 100%
+      );
+  background-size: 60px 60px;
+}
+
+/* Секции с гжелью (светлый фон) */
+.section-gzhel {
+  background-color: #eef2ff;
+  background-image:
+    radial-gradient(
+      ellipse 18px 24px at 30px 30px,
+      rgba(26, 58, 107, 0.1) 0%,
+      transparent 70%
+    ),
+    radial-gradient(
+      circle 6px at 30px 30px,
+      rgba(26, 58, 107, 0.15) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 8px 14px at 20px 22px,
+      rgba(26, 58, 107, 0.08) 0%,
+      transparent 80%
+    ),
+    radial-gradient(
+      ellipse 8px 14px at 40px 22px,
+      rgba(26, 58, 107, 0.08) 0%,
+      transparent 80%
+    ),
+    radial-gradient(
+      ellipse 8px 14px at 20px 38px,
+      rgba(26, 58, 107, 0.08) 0%,
+      transparent 80%
+    ),
+    radial-gradient(
+      ellipse 8px 14px at 40px 38px,
+      rgba(26, 58, 107, 0.08) 0%,
+      transparent 80%
+    ),
+    radial-gradient(
+      circle 2px at 10px 10px,
+      rgba(26, 58, 107, 0.12) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle 2px at 50px 10px,
+      rgba(26, 58, 107, 0.12) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle 2px at 10px 50px,
+      rgba(26, 58, 107, 0.12) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle 2px at 50px 50px,
+      rgba(26, 58, 107, 0.12) 0%,
+      transparent 100%
     ),
     repeating-linear-gradient(
-      180deg,
+      45deg,
       transparent,
-      transparent 8px,
-      rgba(0, 0, 0, 0.03) 8px,
-      rgba(0, 0, 0, 0.03) 10px
+      transparent 28px,
+      rgba(26, 58, 107, 0.03) 28px,
+      rgba(26, 58, 107, 0.03) 30px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 28px,
+      rgba(26, 58, 107, 0.03) 28px,
+      rgba(26, 58, 107, 0.03) 30px
     );
+  background-size: 60px 60px;
 }
 
-.ornament-border {
-  border-image: repeating-linear-gradient(
-      90deg,
-      #c0392b 0px,
-      #c0392b 4px,
-      #d4a017 4px,
-      #d4a017 8px,
-      #c0392b 8px,
-      #c0392b 12px
-    )
-    4;
-  border-width: 3px;
-  border-style: solid;
+/* =====================
+   РАМКА ГЖЕЛЬ
+   ===================== */
+.gzhel-border {
+  border: 3px solid transparent;
+  background-clip: padding-box;
+  box-shadow:
+    0 0 0 3px #1a3a6b,
+    0 0 0 5px #d4a017,
+    0 0 0 7px #1a3a6b;
 }
 
-/* Деревянная кнопка */
+/* =====================
+   ПОЛОСКА ХОХЛОМА (заменяет wood-strip)
+   ===================== */
+.khokhloma-strip {
+  background-color: #1a0a02;
+  background-image:
+    radial-gradient(
+      circle 4px at 20px 20px,
+      rgba(212, 160, 23, 0.6) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle 3px at 50px 12px,
+      rgba(192, 57, 43, 0.6) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle 4px at 80px 22px,
+      rgba(212, 160, 23, 0.5) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle 3px at 110px 14px,
+      rgba(192, 57, 43, 0.55) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle 4px at 140px 20px,
+      rgba(212, 160, 23, 0.6) 0%,
+      transparent 100%
+    ),
+    repeating-linear-gradient(
+      30deg,
+      transparent,
+      transparent 18px,
+      rgba(212, 160, 23, 0.07) 18px,
+      rgba(212, 160, 23, 0.07) 20px
+    ),
+    repeating-linear-gradient(
+      -30deg,
+      transparent,
+      transparent 18px,
+      rgba(192, 57, 43, 0.06) 18px,
+      rgba(192, 57, 43, 0.06) 20px
+    );
+  background-size: 160px 40px;
+  border-top: 2px solid #d4a017;
+  border-bottom: 2px solid #d4a017;
+}
+
+/* =====================
+   СЕКЦИЯ ХОХЛОМА (заменяет wood-section)
+   ===================== */
+.wood-section {
+  background-color: #1a0a02;
+  background-image:
+    radial-gradient(
+      circle 5px at 15px 15px,
+      rgba(212, 160, 23, 0.45) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle 4px at 45px 15px,
+      rgba(192, 57, 43, 0.45) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle 5px at 30px 35px,
+      rgba(212, 160, 23, 0.4) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle 3px at 8px 45px,
+      rgba(192, 57, 43, 0.35) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle 4px at 52px 45px,
+      rgba(212, 160, 23, 0.4) 0%,
+      transparent 100%
+    ),
+    repeating-linear-gradient(
+      30deg,
+      transparent,
+      transparent 10px,
+      rgba(212, 160, 23, 0.05) 10px,
+      rgba(212, 160, 23, 0.05) 12px
+    ),
+    repeating-linear-gradient(
+      -30deg,
+      transparent,
+      transparent 10px,
+      rgba(192, 57, 43, 0.04) 10px,
+      rgba(192, 57, 43, 0.04) 12px
+    );
+  background-size: 60px 60px;
+}
+
+/* =====================
+   СТАРЫЙ УЗОР (оставляем как запасной)
+   ===================== */
+.pattern-folk {
+  background-color: #fff8f0;
+  background-image:
+    radial-gradient(
+      circle 3px at 30px 30px,
+      rgba(192, 57, 43, 0.07) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle 2px at 0px 0px,
+      rgba(192, 57, 43, 0.06) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle 2px at 60px 0px,
+      rgba(192, 57, 43, 0.06) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle 2px at 0px 60px,
+      rgba(192, 57, 43, 0.06) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle 2px at 60px 60px,
+      rgba(192, 57, 43, 0.06) 0%,
+      transparent 100%
+    ),
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 28px,
+      rgba(192, 57, 43, 0.03) 28px,
+      rgba(192, 57, 43, 0.03) 30px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 28px,
+      rgba(192, 57, 43, 0.03) 28px,
+      rgba(192, 57, 43, 0.03) 30px
+    );
+  background-size: 60px 60px;
+}
+
+/* =====================
+   КНОПКИ
+   ===================== */
 .btn-wood {
   background: linear-gradient(135deg, #c4843a 0%, #8b4513 50%, #c4843a 100%);
   border: 2px solid #d4a017;
   color: #fff8f0;
-  font-family: "Cormorant SC", serif;
-  font-weight: 600;
-  letter-spacing: 0.05em;
+  font-family: "Uncial Antiqua", "Cormorant SC", serif;
+  font-weight: 400;
+  letter-spacing: 0.06em;
   transition: all 0.3s ease;
   box-shadow:
     0 4px 15px rgba(139, 69, 19, 0.3),
@@ -127,20 +458,6 @@
   position: relative;
   overflow: hidden;
 }
-
-.btn-wood::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: repeating-linear-gradient(
-    90deg,
-    transparent,
-    transparent 3px,
-    rgba(255, 255, 255, 0.03) 3px,
-    rgba(255, 255, 255, 0.03) 6px
-  );
-}
-
 .btn-wood:hover {
   transform: translateY(-2px);
   box-shadow:
@@ -153,26 +470,26 @@
   background: linear-gradient(135deg, #d44332 0%, #c0392b 50%, #d44332 100%);
   border: 2px solid #d4a017;
   color: #fff8f0;
-  font-family: "Cormorant SC", serif;
-  font-weight: 600;
-  letter-spacing: 0.05em;
+  font-family: "Uncial Antiqua", "Cormorant SC", serif;
+  font-weight: 400;
+  letter-spacing: 0.06em;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(192, 57, 43, 0.3);
 }
-
 .btn-red:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(192, 57, 43, 0.45);
   background: linear-gradient(135deg, #e04535 0%, #cc3d2e 50%, #e04535 100%);
 }
 
-/* Золотой разделитель */
+/* =====================
+   ЗОЛОТОЙ РАЗДЕЛИТЕЛЬ
+   ===================== */
 .gold-divider {
   display: flex;
   align-items: center;
   gap: 12px;
 }
-
 .gold-divider::before,
 .gold-divider::after {
   content: "";
@@ -181,7 +498,9 @@
   background: linear-gradient(90deg, transparent, #d4a017, transparent);
 }
 
-/* Анимации при скролле */
+/* =====================
+   АНИМАЦИИ СКРОЛЛ
+   ===================== */
 .reveal {
   opacity: 0;
   transform: translateY(25px);
@@ -189,7 +508,6 @@
     opacity 0.7s ease,
     transform 0.7s ease;
 }
-
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
@@ -202,7 +520,6 @@
     opacity 0.7s ease,
     transform 0.7s ease;
 }
-
 .reveal-left.visible {
   opacity: 1;
   transform: translateX(0);
@@ -215,13 +532,14 @@
     opacity 0.7s ease,
     transform 0.7s ease;
 }
-
 .reveal-right.visible {
   opacity: 1;
   transform: translateX(0);
 }
 
-/* Карточки блюд */
+/* =====================
+   КАРТОЧКИ БЛЮД
+   ===================== */
 .dish-card {
   background: #fff8f0;
   border: 1px solid #e8d5bc;
@@ -231,57 +549,19 @@
     transform 0.3s ease,
     box-shadow 0.3s ease;
 }
-
 .dish-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 20px 40px rgba(139, 69, 19, 0.15);
 }
 
-/* Секция с деревянным фоном */
-.wood-section {
-  background: linear-gradient(
-    135deg,
-    #5c3317 0%,
-    #8b4513 30%,
-    #6b3410 70%,
-    #4a2a0e 100%
-  );
-  background-image:
-    repeating-linear-gradient(
-      85deg,
-      transparent,
-      transparent 15px,
-      rgba(255, 255, 255, 0.02) 15px,
-      rgba(255, 255, 255, 0.02) 16px
-    ),
-    linear-gradient(135deg, #5c3317 0%, #8b4513 30%, #6b3410 70%, #4a2a0e 100%);
-}
-
-/* Рамка с узором */
-.folk-frame {
-  position: relative;
-}
-
-.folk-frame::before {
-  content: "✦ ✦ ✦";
-  position: absolute;
-  top: -14px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #d4a017;
-  font-size: 14px;
-  letter-spacing: 8px;
-  background: inherit;
-  padding: 0 12px;
-}
-
-/* Sticky header */
+/* =====================
+   ШАПКА
+   ===================== */
 .header-sticky {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }
 
-/* Мобильное меню */
 @media (max-width: 768px) {
   .nav-mobile-hidden {
     display: none;

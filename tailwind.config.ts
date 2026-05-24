@@ -23,6 +23,7 @@ export default {
 				cormorant: ['Cormorant', 'serif'],
 				'cormorant-sc': ['Cormorant SC', 'serif'],
 				golos: ['Golos Text', 'sans-serif'],
+				slavic: ['Uncial Antiqua', 'Cormorant SC', 'serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
