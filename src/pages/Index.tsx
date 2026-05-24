@@ -676,7 +676,7 @@ export default function Index() {
                 {
                   icon: "MapPin" as const,
                   label: "Адрес",
-                  value: "Саратовская область, Балашовский р-н, с. Тростянка, ул. Центральная, д. 1",
+                  value: "Саратовская область, Балашовский р-н, с. Тростянка, ул. 40 лет Победы, д. 36",
                   color: "#C0392B",
                 },
                 {
@@ -712,7 +712,7 @@ export default function Index() {
 
               <div className="rounded-2xl overflow-hidden shadow-lg" style={{ border: "2px solid #E8D5BC" }}>
                 <iframe
-                  src="https://yandex.ru/map-widget/v1/?ll=43.16%2C51.55&z=14&pt=43.16%2C51.55%2Cpm2rdl"
+                  src="https://yandex.ru/map-widget/v1/?ll=43.1604%2C51.5467&z=15&pt=43.1604%2C51.5467%2Cpm2rdl~Кафе+Колобок%2Cул.+40+лет+Победы+36"
                   width="100%"
                   height="240"
                   frameBorder="0"
@@ -824,7 +824,7 @@ export default function Index() {
               <h4 className="font-cormorant-sc font-semibold text-base mb-4" style={{ color: "#D4A017" }}>Контакты</h4>
               <div className="space-y-2.5">
                 {[
-                  { icon: "MapPin" as const, text: "Саратовская обл., Балашовский р-н, с. Тростянка" },
+                  { icon: "MapPin" as const, text: "с. Тростянка, ул. 40 лет Победы, д. 36" },
                   { icon: "Phone" as const, text: "+7 (845) 000-00-00", href: "tel:+78450000000" },
                   { icon: "Clock" as const, text: "Ежедневно 10:00 – 22:00" },
                 ].map((item) => (
