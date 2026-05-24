@@ -4,89 +4,55 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 35 60% 97%;
+    --foreground: 22 60% 12%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 35 40% 95%;
+    --card-foreground: 22 60% 12%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 35 40% 95%;
+    --popover-foreground: 22 60% 12%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 8 65% 45%;
+    --primary-foreground: 35 60% 97%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 35 40% 88%;
+    --secondary-foreground: 22 60% 20%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 35 30% 90%;
+    --muted-foreground: 22 30% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 43 80% 47%;
+    --accent-foreground: 22 60% 12%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 35 60% 97%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 35 30% 80%;
+    --input: 35 30% 85%;
+    --ring: 8 65% 45%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 98%;
+    --sidebar-background: 35 60% 97%;
+    --sidebar-foreground: 22 60% 12%;
+    --sidebar-primary: 8 65% 45%;
+    --sidebar-primary-foreground: 35 60% 97%;
+    --sidebar-accent: 35 40% 88%;
+    --sidebar-accent-foreground: 22 60% 12%;
+    --sidebar-border: 35 30% 80%;
+    --sidebar-ring: 8 65% 45%;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Колобок brand vars */
+    --kolobok-wood: #8b4513;
+    --kolobok-wood-light: #c4843a;
+    --kolobok-cream: #fff8f0;
+    --kolobok-beige: #f5e6d3;
+    --kolobok-red: #c0392b;
+    --kolobok-gold: #d4a017;
+    --kolobok-blue: #2c5f8a;
+    --kolobok-brown: #3e2009;
+    --kolobok-text: #2c1a0e;
   }
 }
 
@@ -95,7 +61,229 @@
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-background text-foreground;
+    font-family: "Golos Text", sans-serif;
+    background-color: #fff8f0;
+    color: #2c1a0e;
+  }
+}
+
+/* Узор — народная вышивка SVG фон */
+.pattern-folk {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C0392B' fill-opacity='0.06'%3E%3Cpath d='M30 0 L32 8 L30 6 L28 8 Z M30 60 L32 52 L30 54 L28 52 Z M0 30 L8 32 L6 30 L8 28 Z M60 30 L52 32 L54 30 L52 28 Z'/%3E%3Ccircle cx='30' cy='30' r='3'/%3E%3Ccircle cx='0' cy='0' r='2'/%3E%3Ccircle cx='60' cy='0' r='2'/%3E%3Ccircle cx='0' cy='60' r='2'/%3E%3Ccircle cx='60' cy='60' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.pattern-wood {
+  background-color: #8b4513;
+  background-image:
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 0, 0, 0.04) 2px,
+      rgba(0, 0, 0, 0.04) 4px
+    ),
+    repeating-linear-gradient(
+      180deg,
+      transparent,
+      transparent 8px,
+      rgba(0, 0, 0, 0.03) 8px,
+      rgba(0, 0, 0, 0.03) 10px
+    );
+}
+
+.ornament-border {
+  border-image: repeating-linear-gradient(
+      90deg,
+      #c0392b 0px,
+      #c0392b 4px,
+      #d4a017 4px,
+      #d4a017 8px,
+      #c0392b 8px,
+      #c0392b 12px
+    )
+    4;
+  border-width: 3px;
+  border-style: solid;
+}
+
+/* Деревянная кнопка */
+.btn-wood {
+  background: linear-gradient(135deg, #c4843a 0%, #8b4513 50%, #c4843a 100%);
+  border: 2px solid #d4a017;
+  color: #fff8f0;
+  font-family: "Cormorant SC", serif;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+  box-shadow:
+    0 4px 15px rgba(139, 69, 19, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-wood::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 3px,
+    rgba(255, 255, 255, 0.03) 3px,
+    rgba(255, 255, 255, 0.03) 6px
+  );
+}
+
+.btn-wood:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 8px 25px rgba(139, 69, 19, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  background: linear-gradient(135deg, #d4913f 0%, #9b5523 50%, #d4913f 100%);
+}
+
+.btn-red {
+  background: linear-gradient(135deg, #d44332 0%, #c0392b 50%, #d44332 100%);
+  border: 2px solid #d4a017;
+  color: #fff8f0;
+  font-family: "Cormorant SC", serif;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(192, 57, 43, 0.3);
+}
+
+.btn-red:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(192, 57, 43, 0.45);
+  background: linear-gradient(135deg, #e04535 0%, #cc3d2e 50%, #e04535 100%);
+}
+
+/* Золотой разделитель */
+.gold-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.gold-divider::before,
+.gold-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #d4a017, transparent);
+}
+
+/* Анимации при скролле */
+.reveal {
+  opacity: 0;
+  transform: translateY(25px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.reveal-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(30px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.reveal-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Карточки блюд */
+.dish-card {
+  background: #fff8f0;
+  border: 1px solid #e8d5bc;
+  border-radius: 12px;
+  overflow: hidden;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.dish-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(139, 69, 19, 0.15);
+}
+
+/* Секция с деревянным фоном */
+.wood-section {
+  background: linear-gradient(
+    135deg,
+    #5c3317 0%,
+    #8b4513 30%,
+    #6b3410 70%,
+    #4a2a0e 100%
+  );
+  background-image:
+    repeating-linear-gradient(
+      85deg,
+      transparent,
+      transparent 15px,
+      rgba(255, 255, 255, 0.02) 15px,
+      rgba(255, 255, 255, 0.02) 16px
+    ),
+    linear-gradient(135deg, #5c3317 0%, #8b4513 30%, #6b3410 70%, #4a2a0e 100%);
+}
+
+/* Рамка с узором */
+.folk-frame {
+  position: relative;
+}
+
+.folk-frame::before {
+  content: "✦ ✦ ✦";
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #d4a017;
+  font-size: 14px;
+  letter-spacing: 8px;
+  background: inherit;
+  padding: 0 12px;
+}
+
+/* Sticky header */
+.header-sticky {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Мобильное меню */
+@media (max-width: 768px) {
+  .nav-mobile-hidden {
+    display: none;
   }
 }
